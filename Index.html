@@ -1,0 +1,431 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Khám phá địa điểm du lịch, ẩm thực và phương tiện tại Thành phố Hồ Chí Minh.">
+
+    <title>Du lịch TP. Hồ Chí Minh | SAIGONGO</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JavaScript/script.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="logo">
+            <span class="logo-icon">📍</span>
+
+            <span>
+                Du lịch<br>
+                TP. Hồ Chí Minh
+            </span>
+        </div>
+
+        <nav class="navigation" id="navigation">
+            <a href="#home">Trang chủ</a>
+            <a href="#destinations">Địa điểm</a>
+            <a href="#food">Ẩm thực</a>
+            <a href="#transport">Phương tiện</a>
+        </nav>
+
+        <button class="menu-button" id="menuButton"
+            aria-label="Mở menu">
+            ☰
+        </button>
+
+        <button class="desktop-search" aria-label="Tìm kiếm">
+            ⌕
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <!-- BANNER - PHOTO 1 -->
+        <section class="hero" id="home"
+            style="background-image: linear-gradient(90deg, rgba(230,233,235,.85), rgba(230,233,235,.45)), url('images/photo1.jpg');">
+
+            <div class="hero-content">
+
+                <h1>
+                    Khám phá<br>
+                    Thành phố Hồ Chí Minh
+                </h1>
+
+                <p>
+                    Năng động - Hiện đại - Đậm đà bản sắc văn hóa
+                </p>
+
+                <!-- SEARCH -->
+                <div class="search-box">
+
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="Tìm địa điểm du lịch, món ăn, phương tiện..."
+                    >
+
+                    <button id="searchButton" aria-label="Tìm kiếm">
+                        ⌕
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DANH MỤC -->
+        <section class="categories">
+
+            <a href="#destinations" class="category">
+
+                <span class="category-icon">📍</span>
+
+                <span>Địa điểm du lịch</span>
+
+            </a>
+
+            <a href="#food" class="category">
+
+                <span class="category-icon">🍴</span>
+
+                <span>Ẩm thực</span>
+
+            </a>
+
+            <a href="#transport" class="category">
+
+                <span class="category-icon">🚌</span>
+
+                <span>Phương tiện</span>
+
+            </a>
+
+            <a href="#itinerary" class="category">
+
+                <span class="category-icon">🗓</span>
+
+                <span>Lịch trình gợi ý</span>
+
+            </a>
+
+        </section>
+
+
+        <!-- ĐỊA ĐIỂM NỔI BẬT -->
+        <section class="content-section" id="destinations">
+
+            <div class="section-title">
+
+                <h2>Địa điểm nổi bật</h2>
+
+                <a href="#destinations">
+                    Xem tất cả →
+                </a>
+
+            </div>
+
+
+            <div class="destination-grid">
+
+                <!-- PHOTO 2: DINH DOC LAP -->
+                <article class="destination-card searchable"
+                    data-name="dinh độc lập quận 1">
+
+                    <img
+                        src="Images/photo2.jpg"
+                        alt="Ảnh 2 - Dinh Độc Lập"
+                    >
+
+                    <div class="card-info">
+
+                        <h3>Dinh Độc Lập</h3>
+
+                        <p>📍 Quận 1</p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PHOTO 3: NHA THO DUC BA -->
+                <article class="destination-card searchable"
+                    data-name="nhà thờ đức bà quận 1">
+
+                    <img
+                        src="Images/photo3.jpg"
+                        alt="Ảnh 3 - Nhà thờ Đức Bà"
+                    >
+
+                    <div class="card-info">
+
+                        <h3>Nhà thờ Đức Bà</h3>
+
+                        <p>📍 Quận 1</p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PHOTO 4: BEN BACH DANG -->
+                <article class="destination-card searchable"
+                    data-name="bến bạch đằng quận 1">
+
+                    <img
+                        src="Images/photo4.jpg"
+                        alt="Ảnh 4 - Bến Bạch Đằng"
+                    >
+
+                    <div class="card-info">
+
+                        <h3>Bến Bạch Đằng</h3>
+
+                        <p>📍 Quận 1</p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PHOTO 5: PHO DI BO NGUYEN HUE -->
+                <article class="destination-card searchable"
+                    data-name="phố đi bộ nguyễn huệ quận 1">
+
+                    <img
+                        src="Images/photo5.jpg"
+                        alt="Ảnh 5 - Phố đi bộ Nguyễn Huệ"
+                    >
+
+                    <div class="card-info">
+
+                        <h3>Phố đi bộ Nguyễn Huệ</h3>
+
+                        <p>📍 Quận 1</p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- MÓN NGON NỔI TIẾNG -->
+        <section class="content-section food-section" id="food">
+
+            <div class="section-title">
+
+                <h2>Món ngon nổi tiếng</h2>
+
+                <a href="#food">
+                    Xem tất cả →
+                </a>
+
+            </div>
+
+
+            <div class="food-grid">
+
+                <!-- PHOTO 6: PHO -->
+                <article class="food-card searchable"
+                    data-name="phở món ăn truyền thống">
+
+                    <img
+                        src="Images/photo6.jpg"
+                        alt="Ảnh 6 - Phở"
+                    >
+
+                    <div class="card-info">
+
+                        <h3>Phở</h3>
+
+                        <p>Món ăn truyền thống</p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PHOTO 7: BANH MI -->
+                <article class="food-card searchable"
+                    data-name="bánh mì đặc sản sài gòn">
+
+                    <img
+                        src="Images/photo7.jpg"
+                        alt="Ảnh 7 - Bánh mì"
+                    >
+
+                    <div class="card-info">
+
+                        <h3>Bánh mì</h3>
+
+                        <p>Đặc sản Sài Gòn</p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PHOTO 8: HU TIEU -->
+                <article class="food-card searchable"
+                    data-name="hủ tiếu hương vị đậm đà">
+
+                    <img
+                        src="Images/photo8.jpg"
+                        alt="Ảnh 8 - Hủ tiếu"
+                    >
+
+                    <div class="card-info">
+
+                        <h3>Hủ tiếu</h3>
+
+                        <p>Hương vị đậm đà</p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PHOTO 9: COM TAM -->
+                <article class="food-card searchable"
+                    data-name="cơm tấm món ăn quen thuộc">
+
+                    <img
+                        src="Images/photo9.jpg"
+                        alt="Ảnh 9 - Cơm tấm"
+                    >
+
+                    <div class="card-info">
+
+                        <h3>Cơm tấm</h3>
+
+                        <p>Món ăn quen thuộc</p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- PHƯƠNG TIỆN -->
+        <section class="content-section transport-section" id="transport">
+
+            <div class="section-title">
+
+                <h2>Phương tiện di chuyển</h2>
+
+                <a href="#transport">
+                    Xem tất cả →
+                </a>
+
+            </div>
+
+
+            <div class="transport-grid">
+
+                <div class="transport-card">
+
+                    <span>🚌</span>
+
+                    <h3>Xe buýt</h3>
+
+                    <p>
+                        Di chuyển tiết kiệm trong thành phố.
+                    </p>
+
+                </div>
+
+
+                <div class="transport-card">
+
+                    <span>🚕</span>
+
+                    <h3>Taxi</h3>
+
+                    <p>
+                        Thuận tiện với nhiều lịch trình.
+                    </p>
+
+                </div>
+
+
+                <div class="transport-card">
+
+                    <span>🚇</span>
+
+                    <h3>Metro</h3>
+
+                    <p>
+                        Trải nghiệm tuyến Metro số 1.
+                    </p>
+
+                </div>
+
+
+                <div class="transport-card">
+
+                    <span>🏍</span>
+
+                    <h3>Xe máy</h3>
+
+                    <p>
+                        Linh hoạt khám phá các con phố.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LỊCH TRÌNH GỢI Ý -->
+        <section class="content-section itinerary-section" id="itinerary">
+
+            <div class="section-title">
+
+                <h2>Lịch trình gợi ý</h2>
+
+            </div>
+
+            <p>
+                Bắt đầu hành trình khám phá Sài Gòn với những địa điểm,
+                món ăn và trải nghiệm đặc trưng của thành phố.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <h3>Du lịch TP. Hồ Chí Minh</h3>
+
+        <p>
+            Khám phá thành phố năng động và đầy màu sắc.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
